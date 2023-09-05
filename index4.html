@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me Write</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+        <div class="header_head">
+          <div class="container">
+             <div class="head_inner">
+                <div class="logo">Глушкова Светлана Алексеевна</div>
+                <nav>
+                    <ul>
+                         <li><a href="./index2.html">Обо мне</a></li>
+                         <li><a href="./index3.html">Портфолио</a></li>
+                         <li><a href="./index4.html">Галерея</a></li>
+                         <li class="switch"><a href="#"></a></li>
+                    </ul>
+                </nav>
+             </div>
+         </div>
+     </div>
+
+     Галерея
+
+     <!DOCTYPE HTML>
+     <html>
+     
+     <head>
+       <title>Галерея</title>
+       <link rel="stylesheet" href="gallery.css">
+       <meta charset="utf-8">
+     </head>
+     
+     <body>
+              
+       <ul id="thumbs">
+            <li>
+           <a href="./img/img3.jpeg" title="Image 2"><img src="./img/img3.jpeg"></a>
+         </li>
+         <li>
+           <a href="./img/img4.jpg" title="Image 3"><img src="./img/img4.jpg"></a>
+         </li>
+         <li> 
+            <a href="./img/img2.jpeg" title="image4"><img src="./img/img2.jpeg"></a>
+           </ul>
+     
+       <script>
+         thumbs.onclick = function(event) {
+           let thumbnail = event.target.closest('a');
+     
+           if (!thumbnail) return;
+           showThumbnail(thumbnail.href, thumbnail.title);
+           event.preventDefault();
+         }
+     
+         function showThumbnail(href, title) {
+           largeImg.src = href;
+           largeImg.alt = title;
+         }
+       </script>
+     
+     </body>
+     </html> 
